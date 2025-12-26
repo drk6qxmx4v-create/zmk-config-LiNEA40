@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,
+            //スクロール方向を逆転,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -74,16 +74,6 @@
         middle2 {
             bindings = <&mkp MB3>;
             key-positions = <12 13>;
-        };
-
-        lshift {
-            bindings = <&kp LEFT_SHIFT>;
-            key-positions = <20 21>;
-        };
-
-        rshift {
-            bindings = <&kp RIGHT_SHIFT>;
-            key-positions = <28 29>;
         };
     };
 
@@ -108,10 +98,10 @@
 
         default_layer {
             bindings = <
-&kp Q          &kp W         &kp E               &kp R    &kp T                                  &kp Y            &kp U  &kp I             &kp O              &kp P
-&kp A          &kp S         &kp D               &kp F    &kp G                                  &kp H            &kp J  &kp K             &lt 5 L            &lt 5 RETURN
-&kp Z          &kp X         &kp C               &kp V    &kp B                                  &kp N            &kp M  &kp COMMA         &kp DOT            &kp SLASH
-&mt LCTRL ESC  &kp LEFT_WIN  &mt LEFT_ALT GRAVE  &kp INS  &lt 5 TAB  &lt 2 SPACE    &lt 2 SPACE  &lt 4 BACKSPACE         &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &mo 6
+&kp Q             &kp W         &kp E               &kp R    &kp T                                  &kp Y            &kp U  &kp I             &kp O              &kp P
+&kp A             &kp S         &kp D               &kp F    &kp G                                  &kp H            &kp J  &kp K             &lt 5 L            &lt 5 RETURN
+&mt LEFT_SHIFT Z  &kp X         &kp C               &kp V    &kp B                                  &kp N            &kp M  &kp COMMA         &kp DOT            &mt RIGHT_SHIFT SLASH
+&mt LCTRL ESC     &kp LEFT_WIN  &mt LEFT_ALT GRAVE  &kp INS  &lt 5 TAB  &lt 2 SPACE    &lt 2 SPACE  &lt 4 BACKSPACE         &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &mo 6
             >;
 
             sensor-bindings = <&mouse_scrl SCRL_DOWN SCRL_UP>;
@@ -182,10 +172,10 @@
 
         WIRELESS {
             bindings = <
-&bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                         &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&trans        &trans          &trans        &trans        &trans                               &trans          &trans        &trans        &trans        &trans
-&trans        &trans          &trans        &trans        &trans                               &trans          &trans        &trans        &trans        &trans
-&bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans        &trans    &bootloader  &studio_unlock                &trans        &trans        &trans
+&bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                         &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&trans          &trans        &trans        &trans        &trans                               &trans          &trans        &trans        &trans        &trans
+&trans          &trans        &trans        &trans        &trans                               &trans          &trans        &trans        &trans        &trans
+&studio_unlock  &trans        &trans        &trans        &trans        &trans    &bootloader  &studio_unlock                &trans        &trans        &trans
             >;
 
             sensor-bindings = <&inc_dec_kp RIGHT_ARROW LEFT_ARROW>;
